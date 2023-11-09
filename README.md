@@ -11,14 +11,16 @@ To install and run this application, follow these steps:
 
 1. Clone the repository: https://github.com/ronaldallanpatawaran/trend-micro-react-calendar-app
 
-2. Navigate to the project directory: trend-micro-react-calendar-app
+2. To navigate to the project directory: ./src
 
-3. Install dependencies: run `npm install`
+3. To install dependencies: run `npm install`
 
-4. Start the development server: run `npm start`
+4. To check code standard using eslint: run `npm lint` or `npm lint:fix`
+
+5. To start the development server: run `npm start` and the application will automatically open a browser.
 
 
-Your React app will be available at [http://localhost:3000](http://localhost:3000).
+Your React app will be available at [http://localhost:8080](http://localhost:8080).
 
 
 ## Usage

@@ -1,12 +1,14 @@
-import React from 'react';
-import styles from './App.module.css';
+import React from 'react'
+import styles from './App.module.css'
+import CalendarInput from './components/common/input-calendar'
 
-function App() {
+function App () {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>My React App</h1>
+    <div className={styles.app}>
+      <h1>A simple reactjs calendar picker</h1>
+      <CalendarInput/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -32,9 +32,7 @@ const CalendarInput = () => {
           <FontAwesomeIcon icon={faCalendar} className={styles.calendar_icon} />
           <input type="text" placeholder="Select a date" value={selectedDate} onChange={handleDateInput} onClick={() => setShowCalendar(!showCalendar)} onKeyDown={handleKeyEnter} />
         </div>
-        <div className='calendar-container'>
-          {showCalendar && <TrendCalendar onChange={handleOnChange} date={selectedDate} />}
-        </div>
+        {showCalendar && <TrendCalendar onChange={handleOnChange} date={selectedDate} />}
       </div>
     </>
   );

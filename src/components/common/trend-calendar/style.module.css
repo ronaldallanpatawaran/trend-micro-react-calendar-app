@@ -1,13 +1,14 @@
 /* Calendar Component Styles */
 
 .calendar {
-  width: 330px;
+  width: 300px;
   height: auto;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  margin-top: 5px;
 }
 
 .calendar_header {
@@ -21,7 +22,7 @@
 
 .calendar_header h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -54,7 +55,7 @@
 
 
 .calendar_cell {
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   font-size: 1rem;
   height: 20px;
@@ -91,5 +92,32 @@
 
 .calendar_cell.current_date:hover > span {
   color: #ffffff;
+}
+
+@media (max-width: 450px) {
+  /* Your mobile-specific CSS styles go here */
+  .calendar {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .calendar_cell {
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .calendar_header h3 {
+    margin: 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
 }
 

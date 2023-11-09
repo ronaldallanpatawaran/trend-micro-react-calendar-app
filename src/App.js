@@ -4,7 +4,7 @@ import CalendarInput from './components/common/input-calendar'
 
 function App () {
   return (
-    <div className={styles.app}>
+    <div className={styles.container}>
       <h1>A simple reactjs calendar picker</h1>
       <CalendarInput/>
     </div>

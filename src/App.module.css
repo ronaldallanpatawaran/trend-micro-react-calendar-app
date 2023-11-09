@@ -1,0 +1,7 @@
+.container {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1200px; /* Set a maximum width to limit container size */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container for spacing */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}

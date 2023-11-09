@@ -4,10 +4,7 @@ A simple react.js calendar reusable component
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-<<<<<<< HEAD
-=======
 - [Screenshots](#screenshots)
->>>>>>> 3e8eb31 (Readme added screenshots)
 
 
 ## Installation

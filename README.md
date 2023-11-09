@@ -4,6 +4,10 @@ A simple react.js calendar reusable component
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+<<<<<<< HEAD
+=======
+- [Screenshots](#screenshots)
+>>>>>>> 3e8eb31 (Readme added screenshots)
 
 
 ## Installation
@@ -38,7 +42,12 @@ Your React app will be available at [http://localhost:8080](http://localhost:808
 5. Confirm Your Selection:
   After choosing a date, ensure that the selected date is displayed correctly in the input field.
 
+## Screenshots
 
+![My Project Screenshot](./docs/images/image-1.PNG)
+![My Project Screenshot](./docs/images/image-2.PNG)
+![My Project Screenshot](./docs/images/image-3.PNG)
+![My Project Screenshot](./docs/images/image-4.PNG)
 
 
 

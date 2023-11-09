@@ -1,0 +1,20 @@
+/* CSS */
+.input_container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.input_container input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.calendar_icon {
+  margin-right: 10px;
+  color: #555; /* Customize the color as needed */
+}

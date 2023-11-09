@@ -25,30 +25,37 @@ const TrendCalendar = (props) => {
 
   const prevCurrentDate = new Date(inputtedDate.getFullYear(), inputtedDate.getMonth() - 1, 0);
   
-  const daysInCurrentMonth = new Date(
+  const numberOfDaysCurrentMonth = new Date(
     inputtedDate.getFullYear(),
     inputtedDate.getMonth() + 1,
     0
   ).getDate();
 
-  const daysAfterTheCurrentMonth = new Date(
-    prevCurrentDate.getFullYear(),
-    prevCurrentDate.getMonth() - 1,
-    0
-  ).getDate() + 1;
-
-  const daysBeforeTheCurrentMonth = new Date(
+  const numberOfDaysPrevMonth = new Date(
     inputtedDate.getFullYear(),
     inputtedDate.getMonth(),
-    1
-  ).getDay();
+    0
+  ).getDate();
+
+  const numberOfDaysBeforeTheCurrentMonth = new Date(
+    inputtedDate.getFullYear(),
+    inputtedDate.getMonth(),
+    0
+  ).getDay() + 1;
+
+  const numberOfDaysNextMonth = new Date(
+    inputtedDate.getFullYear(),
+    inputtedDate.getMonth() + 2,
+    0
+  ).getDate();
+
 
   const renderCalendarInDays = () => {
     const calendar = [];
 
     // Days before the current date
-    if (daysBeforeTheCurrentMonth > 0) {
-      for (let day = (daysAfterTheCurrentMonth - daysBeforeTheCurrentMonth); day < daysAfterTheCurrentMonth; day++) {
+    if (numberOfDaysPrevMonth > 0) {
+      for (let day = (numberOfDaysPrevMonth - numberOfDaysBeforeTheCurrentMonth ) + 1; day <= numberOfDaysPrevMonth; day++) {
         const _currentDate = new Date(inputtedDate.getFullYear(), inputtedDate.getMonth() - 1, day);
         calendar.push(
           <div
@@ -65,7 +72,7 @@ const TrendCalendar = (props) => {
     }
 
     // Days of the current date
-    for (let day = 1; day <= daysInCurrentMonth; day++) {
+    for (let day = 1; day <= numberOfDaysCurrentMonth; day++) {
       const _currentDate = new Date(inputtedDate.getFullYear(), inputtedDate.getMonth(), day);
       calendar.push(
         <div
@@ -81,8 +88,8 @@ const TrendCalendar = (props) => {
     }
 
     // Days after the current date
-    if ((maximumCalendarCells - (daysInCurrentMonth + daysBeforeTheCurrentMonth)) > 0) {
-      for (let day = 1; day <= (maximumCalendarCells - (daysInCurrentMonth + daysBeforeTheCurrentMonth)); day++) {
+    if (maximumCalendarCells - (numberOfDaysCurrentMonth + numberOfDaysBeforeTheCurrentMonth) > 0) {
+      for (let day = 1; day <= (maximumCalendarCells - (numberOfDaysCurrentMonth + numberOfDaysBeforeTheCurrentMonth)); day++) {
         const _currentDate = new Date(inputtedDate.getFullYear(), inputtedDate.getMonth() + 1, day);
         calendar.push(
           <div
